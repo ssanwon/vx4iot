@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+  </head>
+
+  <body>
+    <div class="layout_3">
+      <div class="header">
+        <h1>ĐỒ ÁN TỐT NGHIỆP</h1>
+        <h2 style="margin-top: 10px">
+          Đề tài: Ứng dụng IoT điều khiển nhiệt độ kho lạnh
+        </h2>
+      </div>
+      <div class="layout_1">
+        <!-- Thanh menu dọc -->
+        <div class="sidebar">
+          <ul>
+            <li>
+              <img
+                src="../Image/logo_HCMCUTE.png"
+                style="height: 90px; margin: 50px"
+                alt="logo_HCMCUTE"
+              />
+            </li>
+
+            <li>
+              <a
+                style="
+                  background-color: #0668b8;
+                  border-radius: 10px;
+                  color: white;
+                  padding: 10px;
+                "
+                href="./index.html"
+                >Trang chủ</a
+              >
+            </li>
+            <li><a href="../History/history.html">Lịch sử</a></li>
+            <li><a href="../Export/export.html">Xuất</a></li>
+            <li><a href="../Setting/setting.html">Cài đặt</a></li>
+            <li><a href="../Login/login.html">Đăng xuất</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <div class="layout_2">
+            <h1>Kho lạnh</h1>
+            <div class="temperature" id="temperature">25 °C</div>
+          </div>
+          <div class="main-content">
+            <h1 style="margin-top: 10px; width: 500px; text-align: center">
+              Biểu đồ nhiệt độ theo thời gian
+            </h1>
+            <canvas id="chartTemp" class="chart"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Thanh footer -->
+    <footer>&copy; HỆ THỐNG GIÁM SÁT NHIỆT ĐỘ</footer>
+  </body>
+  <script src="./firebase.js" type="module"></script>
+  <script src="./lineChart.js"></script>
+</html>

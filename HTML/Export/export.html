@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Xuất</title>
+    <link rel="stylesheet" href="../Export/export.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://unpkg.com/xlsx/dist/xlsx.full.min.js"></script>
+  </head>
+
+  <body>
+    <div class="layout_1">
+      <!-- Thanh menu dọc -->
+      <div class="sidebar">
+        <ul>
+          <li>
+            <img
+              src="../Image/logo_HCMCUTE.png"
+              style="height: 90px; margin: 50px"
+              alt="logo_HCMCUTE"
+            />
+          </li>
+
+          <li><a href="../Home/index.html">Trang chủ</a></li>
+          <li>
+            <a href="../History/history.html">Lịch sử</a>
+          </li>
+          <li>
+            <a
+              href="../Export/export.html"
+              style="
+                background-color: #0668b8;
+                border-radius: 10px;
+                color: white;
+                padding: 10px;
+              "
+              >Xuất</a
+            >
+          </li>
+          <li><a href="../Setting/setting.html">Cài đặt</a></li>
+          <li><a href="../Login/login.html">Đăng xuất</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <table>
+          <tr>
+            <th>Thời gian cập nhật dữ liệu</th>
+            <th>Nhiệt độ</th>
+            <th>Thời gian đọc dữ liệu</th>
+          </tr>
+        </table>
+        <div id="data-table" class="scrollable-table"></div>
+        <button class="buttonExport" onclick="openNewPage()">Xuất</button>
+      </div>
+    </div>
+    <!-- Thanh footer -->
+    <footer>&copy; HỆ THỐNG GIÁM SÁT NHIỆT ĐỘ</footer>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./export.js"></script>
+</html>
